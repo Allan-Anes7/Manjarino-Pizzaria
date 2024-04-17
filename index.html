@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Manjarino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo-pizza.png" alt="Logo da Pizza">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   <img class="imagem-pizza" src="https://static.itdg.com.br/images/1200-675/c0402ec0fd16e13c7b7b691151d53e1d/277814-original.jpg" alt="">
+
+   <main>
+    <section class="quem-somos" >
+        <h3>Quem Somos •</h3>
+        <p>A casa foi inaugurada em julho de 1984, no Bairro do Belém. Foi a primeira pizzaria com entrega à domicílio. Em 1987, foi aberta uma filial na Vila Carrão, a qual permanece até os dias de hoje sob o mesmo comando da família dos fundadores. São 36 anos de alegria, satisfação e muita dedicação com todo cuidado e preocupação em atender da melhor forma seus clientes, considerados verdadeiros amigos.
+        </p>
+        <br>
+        <p>
+            MISSÃO E VALORES: Nossa missão é proporcionar à você, nosso cliente e amigo, a verdadeira experiência da melhor pizza italiana, elaborada com ingredientes selecionados, assada em forno à lenha e totalmente artesanal. A massa sempre fresquinha, feita diariamente, com fórmula exclusiva que faz toda a diferença no paladar. Se você ainda não degustou nossas pizzas, venha comprovar a qualidade, escolhendo entre os cinquenta e sete sabores que temos a lhe oferecer.
+        </p>
+        <div class="caixas-container">
+            <div class="caixa">
+                <img src="https://www.pizzariamanjarino.com.br/img/pizza.png" alt="">
+                <h2>COMO COMPRAR</h2>
+                <p>
+                    Você pode escolher nossas pizzas através dos telefones (11) 2941-2246 ou (11) 2296-3132 ou pessoalmente. Se nos der o prazer de sua presença em nosso estabelecimento, experimentará nossa famosa batidinha de vinho, cortesia da casa.
+                </p>
+            </div>
+            <div class="caixa">
+                <img src="https://www.pizzariamanjarino.com.br/img/pagamento.png" alt="">
+                <h2>FORMAS DE PAGAMENTO</h2>
+                <p>
+                    Todas as modalidades são aceitas (dinheiro, cheque, cartões de crédito e de débito) com exceção de vales refeição e alimentação.
+                </p>
+            </div>
+            <div class="caixa">
+                <img src="https://www.pizzariamanjarino.com.br/img/entrega.png" alt="">
+                <h2>ENTREGA</h2>
+                <p>
+                    As pizzas poderão ser retiradas no local ou entregues em sua casa, através de nossos colaboradores, treinados para que nosso produto chegue até você com maior rapidez e qualidade.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="cardapio">
+        <h2>• Cardápio •</h2>
+        <p>Clique nas imagens para abrir em tela grande</p>
+        <div class="cardapio-imagens">
+            <div class="cardapio-img" onclick="showImage('https://www.pizzariamanjarino.com.br/img/pizza1.png')">
+                <img src="https://www.pizzariamanjarino.com.br/img/pizza1.png" alt="">
+            </div>
+            <div class="cardapio-img" onclick="showImage('https://www.pizzariamanjarino.com.br/img/pizza2.png')">
+                <img src="https://www.pizzariamanjarino.com.br/img/pizza2.png" alt="">
+            </div>
+            <div class="cardapio-img" onclick="showImage('https://www.pizzariamanjarino.com.br/img/pizza3.png')">
+                <img src="https://www.pizzariamanjarino.com.br/img/pizza3.png" alt="">
+            </div>
+        </div>
+        <div class="logo-parceiras">
+            <div class="logo-marca">
+                <img src="https://www.pizzariamanjarino.com.br/img/sadia.png" alt="">
+            </div>
+            <div class="logo-marca">
+                <img src="https://www.pizzariamanjarino.com.br/img/catupiry.png" alt="">
+            </div>
+            <div class="logo-marca">
+                <img src="https://www.pizzariamanjarino.com.br/img/scala.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="imagem-fogo">
+            <img src="https://www.pizzariamanjarino.com.br/img/image.png" alt="">
+        </div>
+        <div class="texto">
+            <h1><strong>• Contato</strong></h1>
+            <h4><strong>Av. Guilherme Giorgi, 721 - Vila Carrao,<br>São Paulo - SP, 03422-000<br />(11) 2941-2246</strong></h4><br />
+            <form>
+                <input type="text" name="nome" placeholder="nome">
+                <br /><br />
+                <input type="mail" name="email" placeholder="email">
+                <br /><br />
+                <input type="text" name="telefone" placeholder="telefone">
+                <br /><br />
+                <input type="text" name="assunto" placeholder="assunto">
+                <br /><br />
+                <textarea class="mensagem" placeholder ="mensagem" name="mensagem"></textarea>
+                <br /><br />
+                <div>
+                <input type="submit" name="enviar">
+                </div>
+              </form>
+        </div>
+    </section>
+   </main>
+
+   <footer class="footer">
+    <div>
+        <h3><strong><i>Navegue pelo Site</i></strong></h3><br>
+        <a href="#quemsomos"><h4><strong>Quem Somos</strong></h4></a>
+        <a href="#cardapio"><h4><strong>Cardápio</strong></h4></a>
+        <a href="#contato"><h4><strong>Contato</strong></h4></a>
+    </div>
+    <div>
+        <h3><strong><i>Manjarino Pizzaria</i></strong></h3><br>
+        <h4><strong>Av. Guilherme Giorgi, 721 - Vila Carrao,<br>São Paulo - SP, 03422-000</strong></h4>
+        <h4><strong>(11) 2941-2246</strong></h4>
+    </div>
+    <div>
+        <h3><strong><i>Nossas Redes</i></strong></h3><br>
+        <div class="logo-redes-sociais">
+          <a href="#" target="_blank"><img src="https://www.pizzariamanjarino.com.br/img/facebook.png"></a>
+        </div>
+        <div class="logo-redes-sociais">
+          <a href="#" target="_blank"><img src="https://www.pizzariamanjarino.com.br/img/whatsapp.png"></a>
+        </div>
+        <div class="logo-redes-sociais">
+          <a href="#" target="_blank"><img src="https://www.pizzariamanjarino.com.br/img/instagram.png"></a>
+        </div>
+    </div>
+   </footer>
+</body>
+</html>
