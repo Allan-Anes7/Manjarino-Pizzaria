@@ -1,0 +1,430 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    position: relative; /* Necessário para posicionamento absoluto dos elementos internos */
+}
+
+/* Estilo para a logo */
+.logo {
+    position: absolute; /* Posiciona a logo de forma absoluta */
+    top: 10px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    max-width: 100px; /* Defina o tamanho máximo da logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    position: absolute; /* Posiciona o menu de forma absoluta */
+    top: 10px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /* Remove os marcadores da lista */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+}
+
+nav ul li {
+    margin-right: 30px; /* Espaçamento entre os itens do menu */
+    margin-left: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 90px; /* Remove o espaçamento do último item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #fff; /* Cor dos links */
+    display: block; /* Para ajustar o espaçamento vertical */
+    padding: 30px; /* Espaçamento interno */
+    font-size: 28px;
+}
+
+.imagem-pizza {
+    width: 100%;
+    display: block; /* Para remover espaços em branco abaixo da imagem */
+}
+
+.quem-somos {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.quem-somos h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.quem-somos p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.caixas-container {
+    display: flex;
+    justify-content: space-around; /* Alinha as caixas horizontalmente */
+    flex-wrap: wrap;
+}
+
+/* Estilo para as caixas quadradas */
+.caixa {
+    width: calc(33.3333% - 70px); /* Calcula a largura de cada caixa */
+    height: 350px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caixa img {
+    width: 70px;
+    position: relative;
+    top: -5%;
+}
+
+.caixa h2 {
+    color: #C9A92D;
+}
+
+/* Estilo para o texto dentro das caixas */
+.caixa p {
+    color: #000000;
+    margin-top: 30px;
+}
+
+
+/* Estilo para a seção do cardápio */
+.cardapio {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cardapio h2 {
+    color: #C9A92D;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cardapio p {
+    font-size: 20px;
+    color: #CDCDCD;
+    margin-bottom: 40px;
+}
+
+/* Estilo para as imagens */
+.cardapio-img {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre as imagens */
+    cursor: pointer; /* Mostra o cursor como ponteiro ao passar por cima */
+    transition: transform 0.3s ease; /* Efeito de transição suave ao ampliar a imagem */
+}
+
+.cardapio-img img {
+    width: 400px;
+}
+
+/* Efeito de transição ao passar o mouse sobre as imagens */
+
+
+/* Estilo para as imagens ampliadas */
+.ampliada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Coloca a imagem ampliada acima de outros elementos */
+}
+
+.ampliada img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Estilo para o texto dentro das caixas */
+.ampliada p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.logo-parceiras {
+    width: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    overflow: hidden;
+}
+
+.logo-marca {
+    width: 33.3%;
+    float: left;
+}
+
+.logo-marca img {
+    width: 80px;
+}
+
+.imagem-fogo {
+    margin-left: 60px;
+}
+
+.texto {
+    text-align: right;
+    margin-top: -42%;
+    margin-right: 70px;
+}
+
+.texto h1 {
+    font-size: 36px;
+}
+
+
+.texto h4 {
+    font-size: 20px;
+}
+
+.texto input,
+.texto textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.mensagem {
+    width: 100%; 
+    height: 130px;
+}
+
+.texto input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.texto input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Alinha os elementos horizontalmente com espaçamento */
+    margin-top: 80px;
+}
+
+
+footer h3 {
+    font-size: 24px;
+    
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+/* Estilo para os divs dentro do footer */
+footer div {
+    flex: 1; 
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* Estilo para os links dentro das divs */
+footer div a {
+    color: #FFFFFF;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block; /* Para ocupar o espaço total da div */
+    margin-bottom: 10px; /* Espaçamento entre os links */
+}
+
+.logo-redes-sociais {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.logo-redes-sociais img {
+    width: 70px;
+}
+
+
+/* Media Query para dispositivos com largura máxima de 768px (celulares e tablets em modo retrato) */
+@media (max-width: 768px) {
+    /* Exibir o ícone de menu nas três barras */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 1000; /* Colocar o ícone acima dos demais elementos */
+    }
+
+    nav {
+        display: none; /* Esconder o menu por padrão */
+        position: absolute;
+        top: 60px; /* Ajuste da posição do menu */
+        right: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 18px; /* Reduzir o tamanho da fonte */
+    }
+
+    nav.open {
+        display: block; /* Exibir o menu quando estiver aberto */
+    }
+
+    /* Ajuste do header para incluir o ícone de menu nas três barras */
+    header {
+        padding-right: 70px; /* Aumentar o padding do lado direito para acomodar o ícone */
+    }
+
+    .quem-somos h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .quem-somos p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .caixa {
+        width: calc(100% - 40px);
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .caixa img {
+        width: 50px;
+        top: -10%;
+    }
+
+    .caixa h2 {
+        font-size: 20px;
+    }
+
+    .caixa p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .texto {
+        margin-top: -30%;
+        margin-right: 10px;
+    }
+
+    .texto h1 {
+        font-size: 30px;
+    }
+
+    .texto h4 {
+        font-size: 18px;
+    }
+
+    .imagem-fogo img {
+        display: none;
+    }
+
+    .texto input,
+    .texto textarea {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .logo-redes-sociais {
+        margin-left: 10px;
+    }
+
+    .logo-redes-sociais img {
+        width: 50px;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    footer div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    footer div:last-child {
+        margin-bottom: 0;
+    }
+
+    footer h3,
+    footer h4 {
+        font-size: 18px;
+    }
+
+    .cardapio-img img {
+        width: 300px;
+    }
+
+    .ampliada img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .ampliada p {
+        font-size: 18px;
+    }
+
+    
+}
